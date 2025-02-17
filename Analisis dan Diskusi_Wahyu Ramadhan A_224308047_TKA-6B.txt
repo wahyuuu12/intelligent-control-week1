@@ -1,0 +1,42 @@
+Nama		: Wahyu Ramadhan A
+NIM		: 224308047
+Kelas		: TKA-6B
+
+Analisis dan Diskusi
+* Analisis
+1. Apa yang terjadi saat objek berwarna merah muncul di kamera?
+Jawab : Ketika kamera mendeteksi objek bewarna merah, maka tab masking akan mendeteksi objek tersebut, dan menampilkan warna putih sebagai output, bahwa objek bewarna merah tersebut terdeksi. Kemudian tab result akan menampilkan objek warna merah sesuai dengan warna yang ada di coding. Sedangkan tab frame akan menampilkan kondisi asli yang ditangkap kamera.
+
+2. Bagaimana sistem mendeteksi dan memfilter warna merah?
+Jawab : Sistem akan mendeteksi dan memfilter warna merah dengandengan langkah-langkah berikut:
+- Kamera menangkap gambar dalam format RGB
+- Kemudian mengkonversi dari RGB ke HSV, 
+- Kemudian mententukan rentang warna merah dengan kode python:
+dengan warna merah dalam HSV memiliki nilai Hue sekitar 0o- 10o dan 170o- 180o namun pada kode ini hanya rentang 0o- 10o yang digunakan.
+- Selanjutnya membuat masking untuk warna merah, dengan kode python dengan rentang merah bernilai 255 (putih) sedangkan lainnya 0 (hitam)
+- Mengaplikasikan masking kegambar asli, sehingga hanya objek bewarna merah yang akan terlihat dan bagian yang lain tetap hitam,
+3. Bagaimana metode ini dapat diterapkan dalam intelligent control systems?
+Jawab : Metode ini dapat diterapkan dalam sistem line following car. Dalam line following car kendaraan tersebut akan mengikuti jalur dengan warna yang tealh ditentukan. Selain itu deteksi lampu lalu lintas. Sistem dapat mendeteksi lampu merah dan menghentikan kendaraan secara otomatis. Mobil otonom yang menggunakan Computer Vision untuk mengenali lampu lalu lintas. Lalu sistem keamanan (deteksi objek berbahaya), system medis 
+
+
+* Diskusi
+1. Bagaimana AI dapat meningkatkan sistem kontrol berbasis Computer Vision?
+Jawab : AI dapat meningkatkan sistem control cerdas berbasis Computer Vision dengan meningkatkan efisiensi dan adaptasi melalui lingkungan yang dinamis. Melalui Machine Learning dan Deep Learning memungkinkan sistem beradaptasi dan belajar menyesuaikan deteksi otomatis  tanpa kalibrasi manual. Serta mengombinasikan warna, bentuk dan Gerakan untuk Keputusan lebih cerdas, lebih akurat dan lebih cepat.
+
+2. Apa kelebihan dan kekurangan metode deteksi objek berbasis warna?
+Jawab : Kelebihan dan kekurangan metode deteksi objek berbasis warna yaitu:
+- Kelebihan :
+a. Cepat dan efisien
+b. Mudah diterapkan (cukup menentukan renatng warna RGB dan HSV)
+c. Ringan dna realtime (Dapat dijalan diperangkat spesifikasi rendah)
+- Kekurangan :
+a. Terbatas variasi warna objek 
+b. Tidak efektif untuk warna mirip
+c. Sensitif terhadap cahaya
+3. Bagaimana cara meningkatkan akurasi sistem deteksi objek?
+Jawab : 
+- Menggunakan rentang warna yang lebih luas dalam HSV, kombinasikan dua rentang warna merah dalam HSV (0-10 dan 170-180).
+- Menggunakan filter untuk mengurangi noise
+- Menggunakan metode tambahan deteksi  objek(Canny Edge Detection atau Contour Detection) agar bentuk objek llebih jelas
+- Menggabungkan sensor tambahan seperti infrared untuk meningkatkan deteksi.
+
